@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Font Changer</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      width: 200px;
+      padding: 10px;
+    }
+    #fontSelect, #fontSizeSelect, #customFont {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    button {
+      width: 100%;
+      padding: 5px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h3>Choose a Font</h3>
+  <select id="fontSelect">
+    <option value="Arial">Arial</option>
+    <option value="Courier New">Courier New</option>
+    <option value="Georgia">Georgia</option>
+    <option value="Times New Roman">Times New Roman</option>
+    <option value="Verdana">Verdana</option>
+  </select>
+  <input type="text" id="customFont" placeholder="Or enter a custom font">
+  
+  <h3>Choose Font Size</h3>
+  <select id="fontSizeSelect">
+    <option value="12px">12px</option>
+    <option value="14px">14px</option>
+    <option value="16px">16px</option>
+    <option value="18px">18px</option>
+    <option value="20px">20px</option>
+    <option value="24px">24px</option>
+  </select>
+  
+  <button id="changeFont">Change Font</button>
+  <script src="popup.js"></script>
+</body>
+</html>
